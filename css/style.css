@@ -1,0 +1,118 @@
+/*ogólne*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 2px;
+}
+
+
+/*nagłówek główny*/
+
+#header-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/man-1.jpg) center no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+
+/*sekcja podpis nagłówka*/
+
+#header-caption {
+    position: absolute;
+    top: 50%;
+    margin: 0 2%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+/*tekst nagłówka nagłówki główne*/
+
+.caption-txt {
+    margin: 0;
+    font-family: 'Verdana';
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.t1 {
+    font-size: 2em;
+}
+
+.t2 {
+    font-size: 3em;
+}
+
+
+/*responsive 992 1170*/
+
+
+/*nagłówek główny*/
+
+@media (max-width: 1170px) {
+    #header-main {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background: url(../img/man-2.jpg) center no-repeat;
+        background-size: cover;
+        text-align: left;
+    }
+    #header-caption {
+        position: absolute;
+        top: 25%;
+        margin: 0 2%;
+        left: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .t1 {
+        font-size: 1.5em;
+    }
+    .t2 {
+        font-size: 2em;
+    }
+}
+
+
+/*responsive <992*/
+
+@media (max-width: 992px) {
+    #header-main {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background: url(../img/man-1.jpg) center no-repeat;
+        background-size: cover;
+        text-align: center;
+       }
+     #header-caption {
+        position: absolute;
+        top: 120%;
+        margin: 0 2%;
+        left: 0;
+        right: 0;
+       }
+    .caption-txt {
+        color: #000;
+    }
+    .t1 {
+        font-size: 1em;
+    }
+    .t2 {
+        font-size: 1.5em;
+    }
+}
